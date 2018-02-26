@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -24,12 +25,61 @@
   </head>
 
   <body>
+    <style>
+      a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+   </style>
 
     <!-- Navigation -->
-    <nav class="navbar sticky-top navbar-inverse bg-primary bg-transparent">
-      <div class="container">
-        <a class="navbar-brand" href="#">Santa Cruz Sunrise Rotary</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
+
+
+    <nav class="navbar sticky-top navbar-inverse bg-transparent" style="bg-transparent">
+      <div class="container" >
+        <a class="navbar-brand" style="color:white" href="">Santa Cruz Sunrise Rotary</a>
+        <a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
+        <li class="navbar-brand dropdown" style="color:white">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="#">History of Rotary</a></li>
+            <li><a href="#">History of Santa Cruz Sunrise</a></li>
+            <li><a href="#">Board/Officers</a></li>
+          </ul>
+        </li>
+          <a class="navbar-brand" style="color:white" href="events.html">Events</a>
+        <li class="navbar-brand dropdown" style="color:white">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+          <ul class="dropdown-menu dropdown-content">
+            <li><a href="#">Long Term Efforts</a></li>
+            <li><a href="#">Scholarships[x]</a></li>
+            <li><a href="#">Fundraiser</a></li>
+          </ul>
+        </li>
+        <a class="navbar-brand" style="color:white" href="contacts.html">Contact Us</a>
+        <a><button class="w3-button w3-white w3-round-xlarge w3-border-black">Member Login</button></a>
       </div>
     </nav>
 
