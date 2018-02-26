@@ -26,16 +26,31 @@
 
   <body>
     <style>
-    html {
-      background: url(asdf.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-        /* Remove the navbar's default margin-bottom and rounded borders */
-      .navbar-brand{
+      a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
 
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
       }
    </style>
 
@@ -48,7 +63,7 @@
         <a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
         <li class="navbar-brand dropdown" style="color:white">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-content">
             <li><a href="#">History of Rotary</a></li>
             <li><a href="#">History of Santa Cruz Sunrise</a></li>
             <li><a href="#">Board/Officers</a></li>
@@ -57,7 +72,7 @@
           <a class="navbar-brand" style="color:white" href="events.html">Events</a>
         <li class="navbar-brand dropdown" style="color:white">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-content">
             <li><a href="#">Long Term Efforts</a></li>
             <li><a href="#">Scholarships[x]</a></li>
             <li><a href="#">Fundraiser</a></li>
