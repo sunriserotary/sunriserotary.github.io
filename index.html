@@ -11,8 +11,7 @@
     <title>Sunrise Rotary</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -231,6 +230,37 @@ h3 {
       </div>
     </footer>
 
+    <style>
+      a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        min-width: 160px;
+        box-shadow: none;
+        border: none;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+   </style>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -242,12 +272,13 @@ h3 {
     <!-- Navigation -->
     <!--
 
-    <nav class="navbar sticky-top navbar-inverse bg-transparent" style="bg-transparent">
-      <div class="container" >
+    <nav class="navbar fixed-top bg-transparent">
+      <div class="container">
+         <div class="bg transition"></div>
         <a class="navbar-brand" style="color:white" href="">Santa Cruz Sunrise Rotary</a>
         <a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
         <li class="navbar-brand dropdown" style="color:white">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+          <a class="dropdown-toggle" style="color:white" data-toggle="dropdown" href="#">Projects</a>
           <ul class="dropdown-menu dropdown-content">
             <li><a href="#">History of Rotary</a></li>
             <li><a href="#">History of Santa Cruz Sunrise</a></li>
@@ -256,7 +287,7 @@ h3 {
         </li>
           <a class="navbar-brand" style="color:white" href="events.html">Events</a>
         <li class="navbar-brand dropdown" style="color:white">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+          <a class="dropdown-toggle" data-toggle="dropdown" style="color:white" href="#">About</a>
           <ul class="dropdown-menu dropdown-content">
             <li><a href="#">Long Term Efforts</a></li>
             <li><a href="#">Scholarships[x]</a></li>
@@ -264,7 +295,7 @@ h3 {
           </ul>
         </li>
         <a class="navbar-brand" style="color:white" href="contacts.html">Contact Us</a>
-        <a><button class="w3-button w3-white w3-round-xlarge w3-border-black">Member Login</button></a>
+        <a><button type="button" class="btn btn-outline-primary">Member Login</button></a>
       </div>
     </nav>
 
@@ -349,8 +380,9 @@ h3 {
     <!-- Testimonials -->
     <!--<section class="testimonials text-center bg-light">
       <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
+        <h2 class="mb-5">How to get involved</h2>
         <div class="row">
+<<<<<<< HEAD
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
@@ -372,6 +404,9 @@ h3 {
               <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
             </div>
           </div>
+=======
+
+>>>>>>> f8334f46bdcd20807ebfd073bc6940f82f14b84b
         </div>
       </div>
     </section>

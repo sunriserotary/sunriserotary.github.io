@@ -55,14 +55,14 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
 }
 
 header.masthead {
-  position: relative;
+  position: absolute;
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 8rem;
+  padding-top: none;
   padding-bottom: 8rem;
 }
 
