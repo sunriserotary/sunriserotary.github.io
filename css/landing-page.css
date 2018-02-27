@@ -39,6 +39,21 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
         display: block;
       }
 
+.body-text {
+  text-align: center;
+}
+
+.hero-video {
+    width: 100%;
+    position: relative;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 3;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
