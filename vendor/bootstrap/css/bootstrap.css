@@ -84,6 +84,8 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
         display: block;
       }
 
+
+
 .body-text {
   text-align: center;
 }
@@ -4228,6 +4230,12 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  -webkit-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s;
 }
 a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
 
