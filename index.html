@@ -23,6 +23,34 @@
 
     <style>
 
+    a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        min-width: 160px;
+        box-shadow: none;
+        border: none;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+
     body, html {
   height: 100%;
   margin: 0;
@@ -229,36 +257,6 @@ h3 {
         </div>
       </div>
     </footer>
-
-    <style>
-      a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #FFF;
-        min-width: 160px;
-        box-shadow: none;
-        border: none;
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .show {
-        display: block;
-      }
-   </style>
 
 
     <!-- Bootstrap core JavaScript -->
