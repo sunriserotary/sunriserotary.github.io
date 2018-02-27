@@ -1,104 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<body>
-    <!-- Image Showcases -->
-    <section class="showcase">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" 
-          	<canvas id="chart" width="400" height="400"></canvas>
-      <script src="js/Chart.js"></script>
-      <script>
-        var ctx = document.getElementById("chart");
-        var myChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-	    labels: ["Red", "blue"],
-	    datasets: [{
-	    label: 'test',
-	    data: [5, 3],
-	    backgroundColor: [
-	      'rgba(255, 99, 132, 0.2)',
-	      'rgba(54, 162, 235, 0.2)',
-	    ],
-	    borderColor: [
-              'rgba(255,99,132,1)',
-	      'rgba(54,162,235,1)'
-	    ],
-	    borderWidth: 1
-	    }]
-	  },
- 	  options: {
-            scales: {
-	      yAxes: [{
-	        ticks: {
-        	  beginAtZero:true
-	        }
-	      }]
-	    }
-	  }
-        });
-      </script>
-          	
-          </div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Who Are We?</h2>
-            <p class="lead mb-0">Mission statement, description of what Rotary is, what Sunrise works to achieve: a good promotional paragraph that would raw new members in, make people interested and have them learn more.</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Some Information</h2>
-            <p class="lead mb-0">Some details</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <section class="showcase">
-    <div class ="container-fluid p-0">
-      <h2 class="mb-5">Data viz</h2>
-      <canvas id="chart" width="400" height="400"></canvas>
-      <script src="js/Chart.js"></script>
-      <script>
-        var ctx = document.getElementById("chart");
-        var myChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-	    labels: ["Red", "blue"],
-	    datasets: [{
-	    label: 'test',
-	    data: [5, 3],
-	    backgroundColor: [
-	      'rgba(255, 99, 132, 0.2)',
-	      'rgba(54, 162, 235, 0.2)',
-	    ],
-	    borderColor: [
-              'rgba(255,99,132,1)',
-	      'rgba(54,162,235,1)'
-	    ],
-	    borderWidth: 1
-	    }]
-	  },
- 	  options: {
-            scales: {
-	      yAxes: [{
-	        ticks: {
-        	  beginAtZero:true
-	        }
-	      }]
-	    }
-	  }
-        });
-      </script>
-    </div>
-  </div>
-</body>
-</html>
-=======
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -125,37 +24,84 @@
 	</head>
 	<body>
 		<!-- Navigation -->
+		<nav class="navbar sticky-top navbar-inverse bg-transparent" style="bg-transparent">
+			<div class="container" >
+				<a class="navbar-brand" style="color:white" href="">Santa Cruz Sunrise Rotary</a>
+				<a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
+				<li class="navbar-brand dropdown" style="color:white">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+					<ul class="dropdown-menu dropdown-content">
+						<li><a href="#">History of Rotary</a></li>
+						<li><a href="#">History of Santa Cruz Sunrise</a></li>
+						<li><a href="#">Board/Officers</a></li>
+					</ul>
+				</li>
+				<a class="navbar-brand" style="color:white" href="events.html">Events</a>
+				<li class="navbar-brand dropdown" style="color:white">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+					<ul class="dropdown-menu dropdown-content">
+						<li><a href="#">Long Term Efforts</a></li>
+						<li><a href="#">Scholarships[x]</a></li>
+						<li><a href="#">Fundraiser</a></li>
+					</ul>
+				</li>
+				<a class="navbar-brand" style="color:white" href="contacts.html">Contact Us</a>
+				<a><button class="w3-button w3-white w3-round-xlarge w3-border-black">Member Login</button></a>
+			</div>
+		</nav>
 
+		<section class="showcase">
+			<div class="container-fluid p-0">
+				<div class="row no-gutters">
 
-    <nav class="navbar sticky-top navbar-inverse bg-transparent" style="bg-transparent">
-      <div class="container" >
-        <a class="navbar-brand" style="color:white" href="">Santa Cruz Sunrise Rotary</a>
-        <a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
-        <li class="navbar-brand dropdown" style="color:white">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
-          <ul class="dropdown-menu dropdown-content">
-            <li><a href="#">History of Rotary</a></li>
-            <li><a href="#">History of Santa Cruz Sunrise</a></li>
-            <li><a href="#">Board/Officers</a></li>
-          </ul>
-        </li>
-          <a class="navbar-brand" style="color:white" href="events.html">Events</a>
-        <li class="navbar-brand dropdown" style="color:white">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
-          <ul class="dropdown-menu dropdown-content">
-            <li><a href="#">Long Term Efforts</a></li>
-            <li><a href="#">Scholarships[x]</a></li>
-            <li><a href="#">Fundraiser</a></li>
-          </ul>
-        </li>
-        <a class="navbar-brand" style="color:white" href="contacts.html">Contact Us</a>
-        <a><button class="w3-button w3-white w3-round-xlarge w3-border-black">Member Login</button></a>
-      </div>
-    </nav>
+					<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+						<canvas id="chart" width="400" height="400"></canvas>
+						<script src="js/Chart.js"></script>
+						<script>
+							var ctx = document.getElementById("chart");
+							var myChart = new Chart(ctx, {
+								type: 'bar',
+								data: {
+									labels: ["Red", "blue"],
+									datasets: [{
+										label: 'test',
+										data: [5, 3],
+										backgroundColor: [
+										'rgba(255, 99, 132, 0.2)',
+										'rgba(54, 162, 235, 0.2)',
+										],
+										borderColor: [
+										'rgba(255,99,132,1)',
+										'rgba(54,162,235,1)'
+										],
+										borderWidth: 1
+									}]
+								},
+								options: {
+									scales: {
+										yAxes: [{
+											ticks: {
+												beginAtZero:true
+											}
+										}]
+									}
+								}
+							});
+						</script>
+					</div>
+					<div class="col-lg-4 order-lg-1 my-auto showcase-text">
+						<h2>Data Visualization</h2>
+						<p class="lead mb-0">Big ol paragraph talking about our visualization.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--
 		<section class="showcase">
 			<div class ="container-fluid p-0">
-				<h2 class="mb-5">Data viz</h2>
-				<canvas id="chart" width="400" height="400"></canvas>
+				<h2 class="mb-5">Data Visualization</h2>
+				<canvas id="chart2" width="400" height="400"></canvas>
 				<script src="js/Chart.js"></script>
 				<script>
 					var ctx = document.getElementById("chart");
@@ -190,6 +136,57 @@
 				</script>
 			</div>
 		</div>
-	</body>
-	</html>
->>>>>>> 926c0b108c55ddf042491f5a896520fd96f2ebc4
+	-->
+	<!-- Footer -->
+	<footer class="footer bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+					<ul class="list-inline mb-2">
+						<li class="list-inline-item">
+							<a href="#">About</a>
+						</li>
+						<li class="list-inline-item">&sdot;</li>
+						<li class="list-inline-item">
+							<a href="#">Contact</a>
+						</li>
+						<li class="list-inline-item">&sdot;</li>
+						<li class="list-inline-item">
+							<a href="#">Terms of Use</a>
+						</li>
+						<li class="list-inline-item">&sdot;</li>
+						<li class="list-inline-item">
+							<a href="#">Privacy Policy</a>
+						</li>
+					</ul>
+					<p class="text-muted small mb-4 mb-lg-0">&copy; Santa Cruz Sunrise Rotary Club 2018. All Rights Reserved.</p>
+				</div>
+				<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item mr-3">
+							<a href="#">
+								<i class="fa fa-facebook fa-2x fa-fw"></i>
+							</a>
+						</li>
+						<li class="list-inline-item mr-3">
+							<a href="#">
+								<i class="fa fa-twitter fa-2x fa-fw"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<i class="fa fa-instagram fa-2x fa-fw"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
