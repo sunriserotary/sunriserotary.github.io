@@ -12,15 +12,42 @@ h6 {
   font-weight: 700;
 }
 
+a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+
 header.masthead {
-  position: relative;
+  position: absolute;
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 8rem;
+  padding-top: none;
   padding-bottom: 8rem;
 }
 

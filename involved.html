@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" 
+          	<canvas id="chart" width="400" height="400"></canvas>
+      <script src="js/Chart.js"></script>
+      <script>
+        var ctx = document.getElementById("chart");
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+	    labels: ["Red", "blue"],
+	    datasets: [{
+	    label: 'test',
+	    data: [5, 3],
+	    backgroundColor: [
+	      'rgba(255, 99, 132, 0.2)',
+	      'rgba(54, 162, 235, 0.2)',
+	    ],
+	    borderColor: [
+              'rgba(255,99,132,1)',
+	      'rgba(54,162,235,1)'
+	    ],
+	    borderWidth: 1
+	    }]
+	  },
+ 	  options: {
+            scales: {
+	      yAxes: [{
+	        ticks: {
+        	  beginAtZero:true
+	        }
+	      }]
+	    }
+	  }
+        });
+      </script>
+          	
+          </div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Who Are We?</h2>
+            <p class="lead mb-0">Mission statement, description of what Rotary is, what Sunrise works to achieve: a good promotional paragraph that would raw new members in, make people interested and have them learn more.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Some Information</h2>
+            <p class="lead mb-0">Some details</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="showcase">
+    <div class ="container-fluid p-0">
+      <h2 class="mb-5">Data viz</h2>
+      <canvas id="chart" width="400" height="400"></canvas>
+      <script src="js/Chart.js"></script>
+      <script>
+        var ctx = document.getElementById("chart");
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+	    labels: ["Red", "blue"],
+	    datasets: [{
+	    label: 'test',
+	    data: [5, 3],
+	    backgroundColor: [
+	      'rgba(255, 99, 132, 0.2)',
+	      'rgba(54, 162, 235, 0.2)',
+	    ],
+	    borderColor: [
+              'rgba(255,99,132,1)',
+	      'rgba(54,162,235,1)'
+	    ],
+	    borderWidth: 1
+	    }]
+	  },
+ 	  options: {
+            scales: {
+	      yAxes: [{
+	        ticks: {
+        	  beginAtZero:true
+	        }
+	      }]
+	    }
+	  }
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</html>
