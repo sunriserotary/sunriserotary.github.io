@@ -1,4 +1,10 @@
-window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 500) nav.className = ''; else nav.className = 'scroll';
-};
+$(document).ready(function() {
+        // Transition effect for navbar
+        $(window).scroll(function() {
+          if($(this).scrollTop() > 600) {
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
