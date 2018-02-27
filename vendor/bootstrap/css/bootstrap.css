@@ -291,11 +291,10 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
 .caption {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 40%;
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 0px black;
 }
 
 h3 {
@@ -2756,6 +2755,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 40px;
 }
 
 .btn:hover, .btn:focus {
@@ -2788,6 +2788,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  border-radius: 40;
 }
 
 .btn-primary:hover {
@@ -2811,6 +2812,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
+  border-radius: 40;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -3061,7 +3063,7 @@ fieldset:disabled a.btn {
   background-color: transparent;
   background-image: none;
   border-color: #B22222;
-  radius: 10;
+  border-radius: 40;
 }
 
 .btn-outline-primary:hover {
