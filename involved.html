@@ -10,8 +10,7 @@
 		<title>Sunrise Rotary</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Custom fonts for this template -->
 		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,15 +20,121 @@
 		<!-- Custom styles for this template -->
 		<link href="css/landing-page.min.css" rel="stylesheet">
 
+		<style>
+
+			a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #FFF;
+				min-width: 160px;
+				box-shadow: none;
+				border: none;
+				z-index: 1;
+			}
+
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+			.dropdown-content a:hover {
+				background-color: #ddd;
+			}
+
+			.show {
+				display: block;
+			}
+
+			body, html {
+				height: 100%;
+				margin: 0;
+				font: 400 15px/1.8 "Lato", sans-serif;
+				color: #777;
+			}
+
+			.bgimg-1, .bgimg-2, .bgimg-3 {
+				position: relative;
+				opacity: 0.90;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+			}
+			.bgimg-1 {
+				background-image: url("img/bg-masthead.jpg");
+				min-height: 100%;
+			}
+
+			.bgimg-2 {
+				background-image: url("img/bg-showcase-1.jpg");
+				min-height: 400px;
+			}
+
+			.bgimg-3 {
+				background-image: url("img/bg-showcase-2.jpg");
+				min-height: 150px;
+			}
+
+			.bgimg-4 {
+				background-image: url("img/bg-showcase-2.jpg");
+				min-height: 400px;
+			}
+
+			.bgimg-5 {
+				background-image: url("img/bg-showcase-2.jpg");
+				min-height: 400px;
+			}
+
+			.bgimg-6 {
+				background-image: url("img/bg-showcase-2.jpg");
+				min-height: 400px;
+			}
+
+			.caption {
+				position: absolute;
+				left: 0;
+				top: 30%;
+				width: 100%;
+				text-align: center;
+				color: white;
+				text-shadow: 2px 2px 0px black;
+			}
+
+			h3 {
+				letter-spacing: 5px;
+				text-transform: uppercase;
+				font: 20px "Lato", sans-serif;
+				color: #111;
+			}
+
+			/* Turn off parallax scrolling for tablets and phones */
+			@media only screen and (max-device-width: 1024px) {
+				.bgimg-1, .bgimg-2, .bgimg-3 {
+					background-attachment: scroll;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="navbar sticky-top navbar-inverse bg-transparent" style="bg-transparent">
-			<div class="container" >
+	<div class="bgimg-3">
+  <div class="caption">
+
+  </div>
+</div>
+
+		<nav class="navbar fixed-top bg-transparent">
+			<div class="container">
 				<a class="navbar-brand" style="color:white" href="">Santa Cruz Sunrise Rotary</a>
 				<a class="navbar-brand" style="color:white" href="involved.html">Get Involved</a>
 				<li class="navbar-brand dropdown" style="color:white">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+					<a class="dropdown-toggle" style="color:white" data-toggle="dropdown" href="#">Projects</a>
 					<ul class="dropdown-menu dropdown-content">
 						<li><a href="#">History of Rotary</a></li>
 						<li><a href="#">History of Santa Cruz Sunrise</a></li>
@@ -38,7 +143,7 @@
 				</li>
 				<a class="navbar-brand" style="color:white" href="events.html">Events</a>
 				<li class="navbar-brand dropdown" style="color:white">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+					<a class="dropdown-toggle" data-toggle="dropdown" style="color:white" href="#">About</a>
 					<ul class="dropdown-menu dropdown-content">
 						<li><a href="#">Long Term Efforts</a></li>
 						<li><a href="#">Scholarships[x]</a></li>
@@ -46,7 +151,7 @@
 					</ul>
 				</li>
 				<a class="navbar-brand" style="color:white" href="contacts.html">Contact Us</a>
-				<a><button class="w3-button w3-white w3-round-xlarge w3-border-black">Member Login</button></a>
+				<a><button type="button" class="btn btn-outline-primary">Member Login</button></a>
 			</div>
 		</nav>
 
@@ -63,9 +168,11 @@
 								type: 'line',
 								data: {
 									labels: [1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],
-									datasets: [{
-										label: 'Total Active Members',
-										data: [0,4,5,6,9,9,11,16,17,17,17,19,20,20,23,23,24,26,27,30,32,38,39,41,44,47,49,53,55,65,68,76,82,89,91],
+									datasets: [
+										
+										{
+										label: 'Total Active Members', 
+										data: [0,4,5,6,9,9,11,16,17,17,17,19,20,20,23,23,24,26,27,30,32,38,39,41,44,47,49,53,55,65,68,76,82,89,91], 
 										backgroundColor: [
 										'rgba(255, 99, 132, 0.2)',
 										],
@@ -73,7 +180,20 @@
 										'rgba(255,99,132,1)',
 										],
 										borderWidth: 1
-									}]
+										},
+
+										{
+										label: 'Total Active Members2', 
+										data: [0,10,25,2,19,29,31,56,36,17,17,19,20,20,23,23,24,26,87,10,62,78,19,31,64,77,19,43,75,35,28,86,22,49,61], 
+										backgroundColor: [
+										'rgba(54, 162, 235, 0.2)',
+										],
+										borderColor: [
+										'rgba(54,162,235,1)',
+										],
+										borderWidth: 1
+										}
+									]
 								},
 								options: {
 									scales: {
