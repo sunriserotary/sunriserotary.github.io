@@ -12,7 +12,7 @@ h6 {
   font-weight: 700;
 }
 
-a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+      a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
       .dropdown-content {
         display: none;
         position: absolute;
