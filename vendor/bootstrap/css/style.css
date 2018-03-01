@@ -25,6 +25,10 @@
   border-color: #C57ED3;
 }
 
+a svg:hover #logo {
+  fill: #00cccc;
+}
+
 .navbar {
   background-color: bg-dark;
   border: none;
