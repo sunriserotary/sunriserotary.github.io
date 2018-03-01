@@ -618,6 +618,7 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  border-color: black;
 }
 
 .display-1 {
@@ -2729,15 +2730,15 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #ed8924;
-  border-color: #ed8924;
+  background-color:#00bccd;
+  border-color: #00bccd;
   border-radius: 40;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #008080;
+  border-color: #008080;
 }
 
 .btn-primary:focus, .btn-primary.focus {
