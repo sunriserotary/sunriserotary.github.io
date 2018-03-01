@@ -57,35 +57,6 @@ h6 {
   font-weight: 700;
 }
 
-a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .show {
-        display: block;
-      }
-
-
-
 .body-text {
   text-align: center;
 }
@@ -213,34 +184,6 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
-a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #FFF;
-        min-width: 160px;
-        box-shadow: none;
-        border: none;
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .show {
-        display: block;
-      }
 
     body, html {
   height: 100%;
@@ -2786,8 +2729,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #800000;
+  border-color: #800000;
   border-radius: 40;
 }
 
@@ -4240,7 +4183,7 @@ tbody.collapse.show {
   -webkit-transition: background-color 1s ease 0s;
   transition: background-color 1s ease 0s;
 }
-a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+a:hover,.navbar-nav>.active > a{ color: gray !important;}
 
 .dropdown-content {
   display: none;
@@ -4289,7 +4232,7 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }

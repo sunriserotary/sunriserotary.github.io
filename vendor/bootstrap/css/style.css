@@ -74,7 +74,7 @@
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
-  background-color: #490D40;
+  background-color: #800000;
   -webkit-transition: background-color 1s ease 0s;
   transition: background-color 1s ease 0s;
   -webkit-box-shadow: 0 0 4px grey;
