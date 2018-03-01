@@ -27,6 +27,14 @@
 
 .svg:hover {
   filter: invert(.5) sepia(4) saturate(4) hue-rotate(130deg);
+  -webkit-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s;
+}
+
+.center{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .icon-256 {
