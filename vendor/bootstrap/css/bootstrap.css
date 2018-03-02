@@ -205,7 +205,7 @@ footer.footer {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .test-1, .bgimg-4, .bgimg-5, .bgimg-6 {
   position: relative;
   opacity: 0.90;
   background-attachment: fixed;
@@ -227,6 +227,11 @@ footer.footer {
 .bgimg-3 {
   background-image: url("../../../img/bg-showcase-2.jpg");
   min-height: 400px;
+}
+
+.test-1 {
+  background-image: url("../../../img/cow.jpg");
+  min-height: 600px;
 }
 
 .bgimg-4 {
@@ -262,7 +267,7 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .test-1{
         background-attachment: scroll;
     }
 }
@@ -3375,6 +3380,7 @@ tbody.collapse.show {
 .dropup,
 .dropdown {
   position: relative;
+
 }
 
 .dropdown-toggle::after {
@@ -4294,6 +4300,8 @@ a:hover,.navbar-nav>.active > a{ color: gray !important;}
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding:10px;
+  border:20px;
 }
 
 .navbar-toggler {
