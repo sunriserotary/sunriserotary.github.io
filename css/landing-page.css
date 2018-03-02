@@ -12,7 +12,11 @@ h6 {
   font-weight: 700;
 }
 
-a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
+      a:hover,.navbar-nav>.active > a{ color: #00cccc !important;
+        -webkit-transition: background-color 1s ease 0s;
+        transition: background-color 1s ease 0s;
+      }
+
       .dropdown-content {
         display: none;
         position: absolute;
@@ -31,8 +35,9 @@ a:hover,.navbar-nav>.active > a{ color: #B22222 !important;}
         text-align: left;
       }
 
-      .dropdown-content a:hover {
-        background-color: #ddd;
+      .dropdown-content a:hover{
+        background-color: #f9f9f9;
+        color: #B22222;
       }
 
       .show {
