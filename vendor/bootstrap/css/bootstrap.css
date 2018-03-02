@@ -35,6 +35,10 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.footer-link-text {
+  color:black;
+}
+
 .front-page-text {
   color: black;
   background-color: white;
@@ -190,8 +194,8 @@ header.masthead h1 {
 }
 
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
     body, html {
@@ -688,7 +692,7 @@ mark,
 }
 
 .list-inline-item:not(:last-child) {
-  margin-right: 0.5rem;
+  margin-right: 6rem;
 }
 
 .initialism {
@@ -5466,10 +5470,8 @@ a:hover,.navbar-nav>.active > a{ color: gray !important;}
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
+  padding: 0.35rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .list-group-item:first-child {
