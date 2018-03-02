@@ -858,8 +858,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: ;
+  padding-left: ;
 }
 
 .col {
@@ -4238,6 +4238,7 @@ a:hover,.navbar-nav>.active > a{ color: gray !important;}
 }
 
 .navbar-brand {
+  position: relative;
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -4295,8 +4296,8 @@ a:hover,.navbar-nav>.active > a{ color: gray !important;}
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: white;
+  border: 2px solid transparent;
   border-radius: 0.25rem;
 }
 
@@ -4630,13 +4631,14 @@ a:hover,.navbar-nav>.active > a{ color: gray !important;}
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  color: #00cccc;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.5);
