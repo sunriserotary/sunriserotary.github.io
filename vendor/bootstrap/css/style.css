@@ -25,6 +25,9 @@
   border-color: #C57ED3;
 }
 
+.navbar-left{
+    float: left;
+}
 .svg:hover {
   filter: invert(.5) sepia(4) saturate(4) hue-rotate(130deg);
   -webkit-transition: background-color 1s ease 0s;
