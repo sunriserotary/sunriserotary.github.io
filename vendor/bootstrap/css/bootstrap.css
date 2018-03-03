@@ -3804,6 +3804,12 @@ tbody.collapse.show {
   margin-left: -1px;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
 .input-group-text {
   display: -webkit-box;
   display: -ms-flexbox;
