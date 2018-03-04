@@ -2479,6 +2479,7 @@ defaults._set('doughnut', {
 	legend: {
 		labels: {
 			generateLabels: function(chart) {
+			
 				var data = chart.data;
 				if (data.labels.length && data.datasets.length) {
 					return data.labels.map(function(label, i) {

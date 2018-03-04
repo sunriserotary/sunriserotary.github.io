@@ -27,6 +27,55 @@
 
   </head>
 
+  <style>
+    .container {
+      position: relative;
+      width: 25%;
+    }
+
+    .image {
+      display: block;
+      width: 300px;
+      height: 245px;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .row {
+      width:77%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  </style>
+
   <body>
     <div id="app" class="container bg-dark">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
@@ -104,7 +153,9 @@
 					<h1 class="mb-0">Events</h1>
 			</div>
 
-      <h3> <a id="upcoming"align="center"class="my-4"></a>Upcoming Events</h3>
+      <br><br>
+
+      <h3 id="upcoming"align="center"class="my-4">Upcoming Events</h3>
 
       <div id="carouselExampleIndicators" class="carousel"  align="center" slide data-ride="carousel">
         <ol class="carousel-indicators">
@@ -114,13 +165,13 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="img/cow.jpg" alt="First slide">
+            <img class="d-block img-ind" src="img/cow.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="img/cow.jpg" alt="Second slide">
+            <img class="d-block img-ind" src="img/sheep.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="img/cow.jpg" alt="Third slide">
+            <img class="d-block img-ind" src="img/sloth.jpg" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -132,38 +183,27 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <br><br>
 
-      <h3> <a id="reoccurring" align="center"class="my-4"></a>reoccurring Projects</h3>
 
-      <div class="row">
+      <h3 id="reoccurring" align="center"class="my-4">reoccurring Projects</h3>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="img/bg-wine2water-1.jpg" alt="">
-          </a>
+      <center>
+        <div class="row">
+          <img class="img-fluid" src="img/bg-wine2water-1.jpg">
+          <img class="img-fluid" src="img/pic.jpg">
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="img/bg-district-con.jpg" alt="">
-          </a>
+      </center>
+      <center>
+        <div class="row">
+          <img class="img-fluid" src="img/bg-showcase-1.jpg">
+          <img class="img-fluid" src="img/bg-adopthighway.jpg">
         </div>
+      </center>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="img/bg-campharmon.jpg" alt="">
-          </a>
-        </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="img/bg-adopthighway.jpg" alt="">
-          </a>
-        </div>
-
-      </div>
       <div class="responsiveCal">
-        <h3><a id="calendar" align="center"class="my-4"></a>Calendar</h3>
+        <h3 id="calendar" align="center"class="my-4">Calendar</h3>
 
         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=example.be_cpkbjcpttgb5q0%40group.calendar.google.com&amp;color=%23ffcf03&amp;ctz=America%2FChicago"
         style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">

@@ -47,45 +47,4 @@ var myChart = new Chart(ctx, {
 });
 
 
-// Chart #2
-var ctx = document.getElementById("chart2");
-var myChart = new Chart(ctx, {
-   type: 'line',
-   data: {
-      labels: years,
-      datasets: [{
-         label: 'Number of Currently Active Members',
-         data: agg_total_members,
-         backgroundColor: ['rgba(255, 99, 132, 0.2)',
-         ],
-         borderColor: [
-         'rgba(255,99,132,1)',
-         ],
-         borderWidth: 1
-      },{
-         label: 'Active Members Gained Per Year',
-         data: per_year_members,
-         backgroundColor: [
-         'rgba(61, 163, 232, 0.2)',
-         ],
-         borderColor: [
-         'rgba(61, 163, 232, 1)',
-         ],
-         borderWidth: 1
-      }
-   ]
-   },
-   options: {
-      responsive: true,
-      legend: {
-         position: 'bottom',
-      },
-      scales: {
-         yAxes: [{
-            ticks: {
-               beginAtZero:true
-            }
-         }]
-      }
-   }
-});
+
