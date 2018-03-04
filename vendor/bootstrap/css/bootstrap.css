@@ -61,6 +61,10 @@ h6 {
   font-weight: 700;
 }
 
+.front-page-logo {
+  padding-bottom: 1.5rem;
+}
+
 .body-text {
   text-align: center;
 }
@@ -221,38 +225,47 @@ footer.footer {
 
 .bgimg-2 {
   background-image: url("../../../img/bg-showcase-1.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .bgimg-3 {
   background-image: url("../../../img/bg-showcase-2.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .test-1 {
   background-image: url("../../../img/cow.jpg");
-  min-height: 600px;
+  min-height: 50%;
 }
 
 .bgimg-4 {
   background-image: url("../../../img/bg-district-con.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .bgimg-5 {
   background-image: url("../../../img/bg-showcase-2.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .bgimg-6 {
   background-image: url("../../../img/bg-showcase-2.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .caption {
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.subpage-caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: white;
