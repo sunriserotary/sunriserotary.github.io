@@ -3023,17 +3023,17 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #B22222;
+  color: #00bccd;
   background-color: transparent;
   background-image: none;
-  border-color: #B22222;
+  border-color: #00bccd;
   border-radius: 40;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #B22222;
-  border-color: #B22222;
+  background-color: #00bccd;
+  border-color: #00bccd;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {

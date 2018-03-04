@@ -78,9 +78,11 @@ var myChart = new Chart(ctx, {
    options: {
       responsive: true,
       legend: {
-         position: 'bottom',
-      },
-      scales: {
+         labels: {
+          padding: 20
+       }
+    },
+    scales: {
          yAxes: [{
             ticks: {
                beginAtZero:true
@@ -88,4 +90,70 @@ var myChart = new Chart(ctx, {
          }]
       }
    }
+});
+
+new Chart(document.getElementById("chart1"), {
+  type: 'pie',
+  data: {
+    labels: ["Chat", "Prospeção", "Whatsapp", "Trial", "Site", "Telefone", "E-mail", "Evento"],
+    datasets: [{
+      data: [700, 400, 200, 150, 80, 50, 20, 10],
+      borderWidth: 2,
+      hoverBorderWidth: 10,
+      backgroundColor: pieColors,
+      hoverBackgroundColor: pieColors,
+      hoverBorderColor: pieColors,
+      borderColor: pieColors
+    }]
+  },
+  options: {
+    legend: {
+      display: true,
+      position: 'bottom',
+      fullWidth: true,
+      onClick: () => {}, //prevent filter by default
+      labels: {
+        generateLabels: (chart) => {
+
+          chart.legend.afterFit = function () {
+            var width = this.width; 
+            console.log(this);
+           
+            this.lineWidths = this.lineWidths.map( () => this.width-12 );
+            
+            this.options.labels.padding = 30;
+            this.options.labels.boxWidth = 15;
+          };
+
+          var data = chart.data;
+          //https://github.com/chartjs/Chart.js/blob/1ef9fbf7a65763c13fa4bdf42bf4c68da852b1db/src/controllers/controller.doughnut.js
+          if (data.labels.length && data.datasets.length) {
+            return data.labels.map((label, i) => {
+              var meta = chart.getDatasetMeta(0);
+              var ds = data.datasets[0];
+              var arc = meta.data[i];
+              var custom = arc && arc.custom || {};
+              var getValueAtIndexOrDefault = this.getValueAtIndexOrDefault;
+              var arcOpts = chart.options.elements.arc;
+              var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
+              var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+              var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+              
+              return {
+                text: label,
+                fillStyle: fill,
+                strokeStyle: stroke,
+                lineWidth: bw,
+                hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+
+                // Extra data used for toggling the correct item
+                index: i
+              };
+            });
+          }
+          return [];
+        }
+      }
+    }
+  }
 });
