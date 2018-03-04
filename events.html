@@ -36,6 +36,20 @@
     .hvrbox * {
       box-sizing: border-box;
     }
+
+    table {
+      width:80%;
+      padding-bottom: 50px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
     .hvrbox {
       position: relative;
       display: inline-block;
@@ -238,12 +252,14 @@
           <div class="hvrbox">
 	           <img src="img/bg-wine2water-1.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
 	             <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                  <br><h3>Wine2Water</h3>
 		              <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
 	             </div>
           </div>
           <div class="hvrbox">
              <img src="img/pic.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
                <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                   <br><h3>District Convention</h3>
                   <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
                </div>
           </div>
@@ -254,12 +270,14 @@
           <div class="hvrbox">
              <img src="img/bg-showcase-1.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
                <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                   <br><h3>Guy talking on Microphone</h3>
                   <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
                </div>
           </div>
           <div class="hvrbox">
              <img src="img/bg-adopthighway.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
                <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                   <br><h3>Selfie!</h3>
                   <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
                </div>
           </div>
@@ -267,12 +285,32 @@
       </center>
 
       <br><br>
-      <div class="responsiveCal">
+      <div tyle="padding-bottom: 50px" class="responsiveCal">
         <h3 id="calendar" align="center"class="my-4">Calendar</h3>
-
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=example.be_cpkbjcpttgb5q0%40group.calendar.google.com&amp;color=%23ffcf03&amp;ctz=America%2FChicago"
-        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
-        </iframe>
+        <center>
+         <table id="t01">
+           <tr>
+             <th>Date</th>
+             <th>Speaker</th>
+             <th>Topic</th>
+           </tr>
+           <tr>
+             <td>03/06/18</td>
+             <td>Rebecca Jackson</td>
+             <td>Music in May </td>
+           </tr>
+           <tr>
+             <td>03/13/18</td>
+             <td>Lisa Krigsman </td>
+             <td>SPCA</td>
+           </tr>
+           <tr>
+             <td>03/20/18</td>
+             <td>Danny Wright/Gravity Water</td>
+             <td>Clean Water Projects Vietnam & India</td>
+           </tr>
+         </table>
+       </center>
       </div>
       <!-- /.row -->
     <!-- /.container -->
