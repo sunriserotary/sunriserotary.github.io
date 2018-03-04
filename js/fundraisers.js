@@ -51,7 +51,7 @@ var orgchart = new Chart(org_id, {
    options: {
       responsive: true,
       legend: {
-         dispaly: false,
+         display: true,
          position: 'right'
       }
    }
