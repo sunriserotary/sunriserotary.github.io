@@ -28,22 +28,16 @@
   </head>
 
   <style>
-    .events-container {
-      position: relative;
-      width: 25%;
+    .events-img-fluid {
+      height: 35%;
+      width: 50%;
     }
-
-    .image {
-      display: block;
-      width: 300px;
-      height: 245px;
-    }
-
     .overlay {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
+      padding:20px;
       background-color: #008CBA;
       overflow: hidden;
       width: 100%;
@@ -51,7 +45,7 @@
       transition: .5s ease;
     }
 
-    .events-container:hover .overlay {
+    .img-fluid:hover .overlay {
       height: 100%;
     }
 
@@ -192,14 +186,18 @@
 
       <center>
         <div class="events-row">
-          <img style="padding:20px" class="img-fluid" src="img/bg-wine2water-1.jpg">
-          <img style="padding:20px" class="img-fluid" src="img/pic.jpg">
+            <img style="padding:20px" class="events-img-fluid" src="img/bg-wine2water-1.jpg">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+
+          <img style="padding:20px" class="events-img-fluid" src="img/pic.jpg">
         </div>
       </center>
       <center>
         <div class="events-row">
-          <img style="padding:20px" class="img-fluid" src="img/bg-showcase-1.jpg">
-          <img style="padding:20px" class="img-fluid" src="img/bg-adopthighway.jpg">
+          <img style="padding:20px" class="events-img-fluid" src="img/bg-showcase-1.jpg">
+          <img style="padding:20px" class="events-img-fluid" src="img/bg-adopthighway.jpg">
         </div>
       </center>
 
