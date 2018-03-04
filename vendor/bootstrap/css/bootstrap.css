@@ -745,9 +745,8 @@ mark,
 }
 
 .img-ind {
-  max-width: 100%;
-  width: 1100px;
-  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .img-thumbnail {
