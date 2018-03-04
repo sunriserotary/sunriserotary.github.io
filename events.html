@@ -32,42 +32,90 @@
       height: 35%;
       width: 50%;
     }
-    .overlay {
+    .hvrbox,
+    .hvrbox * {
+      box-sizing: border-box;
+    }
+    .hvrbox {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      max-width: 100%;
+      height: 35%;
+      width: 50%;
+      height: auto;
+    }
+    .hvrbox img {
+      max-width: 100%;
+    }
+    .hvrbox .hvrbox-layer_bottom {
+      display: block;
+    }
+    .hvrbox .hvrbox-layer_top {
+      opacity: 0;
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       right: 0;
-      padding:20px;
-      background-color: #008CBA;
-      overflow: hidden;
+      bottom: 0;
       width: 100%;
-      height: 0;
-      transition: .5s ease;
-    }
-
-    .img-fluid:hover .overlay {
       height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -ms-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
     }
-
-    .text {
-      color: white;
-      font-size: 20px;
+    .hvrbox:hover .hvrbox-layer_top,
+    .hvrbox.active .hvrbox-layer_top {
+      opacity: 1;
+    }
+    .hvrbox .hvrbox-text {
+      text-align: center;
+      font-size: 18px;
+      display: inline-block;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      text-align: center;
+      transform: translate(-50%, -50%);
     }
-
+    .hvrbox .hvrbox-text_mobile {
+      font-size: 15px;
+      border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+      border-top: 1px solid rgba(179, 179, 179, 0.7);
+      margin-top: 5px;
+      padding-top: 2px;
+      display: none;
+    }
+    .hvrbox.active .hvrbox-text_mobile {
+      display: block;
+    }
+    .hvrbox .hvrbox-layer_slideup {
+    	-moz-transform: translateY(100%);
+    	-webkit-transform: translateY(100%);
+    	-ms-transform: translateY(100%);
+    	transform: translateY(100%);
+    }
+    .hvrbox:hover .hvrbox-layer_slideup,
+    .hvrbox.active .hvrbox-layer_slideup {
+    	-moz-transform: translateY(0);
+    	-webkit-transform: translateY(0);
+    	-ms-transform: translateY(0);
+    	transform: translateY(0);
+    }
     .events-row {
-      width:77%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
+     width:77%;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+   }
   </style>
 
   <body>
@@ -186,65 +234,46 @@
 
       <center>
         <div class="events-row">
-            <img style="padding:20px" class="events-img-fluid" src="img/bg-wine2water-1.jpg">
-              <div class="overlay">
-                <div class="text">Hello World</div>
-            </div>
 
-          <img style="padding:20px" class="events-img-fluid" src="img/pic.jpg">
+          <div class="hvrbox">
+	           <img src="img/bg-wine2water-1.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
+	             <div class="hvrbox-layer_top hvrbox-layer_slideup">
+		              <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+	             </div>
+          </div>
+          <div class="hvrbox">
+             <img src="img/pic.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
+               <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                  <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+               </div>
+          </div>
         </div>
       </center>
       <center>
         <div class="events-row">
-          <img style="padding:20px" class="events-img-fluid" src="img/bg-showcase-1.jpg">
-          <img style="padding:20px" class="events-img-fluid" src="img/bg-adopthighway.jpg">
+          <div class="hvrbox">
+             <img src="img/bg-showcase-1.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
+               <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                  <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+               </div>
+          </div>
+          <div class="hvrbox">
+             <img src="img/bg-adopthighway.jpg" alt="Mountains" style="padding:20px" class="hvrbox-layer_bottom">
+               <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                  <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+               </div>
+          </div>
         </div>
       </center>
 
       <br><br>
+      <div class="responsiveCal">
+        <h3 id="calendar" align="center"class="my-4">Calendar</h3>
 
-        <h3 id="calendar" align="center"class="my-4">Schedule of Speakers</h3>
-        <style>
-        table {
-            width:80%;
-            padding-bottom: 50px;
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        </style>
-        <div style="padding-bottom: 50px">
-        <center>
-          <table id="t01">
-            <tr>
-              <th>Date</th>
-              <th>Speaker</th>
-              <th>Topic</th>
-            </tr>
-            <tr>
-              <td>03/06/18</td>
-              <td>Rebecca Jackson</td>
-              <td>Music in May </td>
-            </tr>
-            <tr>
-              <td>03/13/18</td>
-              <td>Lisa Krigsman </td>
-              <td>SPCA</td>
-            </tr>
-            <tr>
-              <td>03/20/18</td>
-              <td>Danny Wright/Gravity Water</td>
-              <td>Clean Water Projects Vietnam & India</td>
-            </tr>
-          </table>
-        </center>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=nl&amp;bgcolor=%23FFFFFF&amp;src=example.be_cpkbjcpttgb5q0%40group.calendar.google.com&amp;color=%23ffcf03&amp;ctz=America%2FChicago"
+        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
       </div>
-
       <!-- /.row -->
     <!-- /.container -->
 
