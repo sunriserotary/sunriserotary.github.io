@@ -235,7 +235,7 @@ footer.footer {
 
 .test-1 {
   background-image: url("../../../img/cow.jpg");
-  min-height: 600px;
+  min-height: 50%;
 }
 
 .bgimg-4 {
@@ -257,6 +257,15 @@ footer.footer {
   position: absolute;
   left: 0;
   top: 35%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.subpage-caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: white;
