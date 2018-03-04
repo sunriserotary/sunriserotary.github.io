@@ -23,7 +23,7 @@ var bikeridechart = new Chart(ctx, {
    options: {
       responsive: true,
       legend: {
-         dispaly: false,
+         display: false,
       },
       scales: {
          yAxes: [{
@@ -34,6 +34,16 @@ var bikeridechart = new Chart(ctx, {
       }
    }
 });
+
+
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 
 var org_id = document.getElementById("money-donated-breakdown");
