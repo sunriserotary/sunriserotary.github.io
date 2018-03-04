@@ -38,27 +38,20 @@ var bikeridechart = new Chart(ctx, {
 
 var org_id = document.getElementById("money-donated-breakdown");
 
-// var orgchart = new Chart(org_id, {
-//    type: 'pie',
-//    data: {
-//       labels: orgs,
-//       datasets: [{
-//          label: 'Money Raised',
-//          data: orgs_total,
-//          backgroundColor: ['#FAE8CD', '#EDAE49', '#F5D29B', '#D1495B', '#E59BA5', '#00798C', '#73B5C0', '#30638E', '#8EA9C1' '#003D5B', '#7395A5', '#B9CAD2'],
-//       }]
-//    },
-//    options: {
-//       responsive: true,
-//       legend: {
-//          dispaly: false,
-//       },
-//       scales: {
-//          yAxes: [{
-//             ticks: {
-//                beginAtZero:true
-//             }
-//          }]
-//       }
-//    }
-// });
+var orgchart = new Chart(org_id, {
+   type: 'pie',
+   data: {
+      labels: orgs,
+      datasets: [{
+         label: 'Money Raised',
+         data: orgs_total,
+         backgroundColor: ['#FAE8CD', '#EDAE49', '#F5D29B', '#D1495B', '#E59BA5', '#00798C', '#73B5C0', '#30638E', '#8EA9C1', '#003D5B', '#7395A5', '#B9CAD2'],
+      }]
+   },
+   options: {
+      responsive: true,
+      legend: {
+         dispaly: false,
+      }
+   }
+});
