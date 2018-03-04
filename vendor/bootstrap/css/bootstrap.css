@@ -721,11 +721,15 @@ mark,
 }
 
 .img-fluid {
+  height: 35%;
+  width: 50%;
+}
+
+.img-ind {
   max-width: 100%;
-  width: 100%;
+  width: 80%;
   padding: 20px;
   height: 75%;
-
 }
 
 .img-thumbnail {
@@ -840,13 +844,12 @@ pre code {
 }
 
 .row {
+  width:77%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .no-gutters {
