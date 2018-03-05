@@ -132,64 +132,47 @@
     <center><button  type="button" class="btn btn-primary">Send</button><center>
   </div> -->
   <div class="center">
-        <form id="contact-form" method="post" action="contact.php" role="form">
+  <form class="form-horizontal" role="form" method="post" action="index.php">
+  <div class="form-group">
+     <label for="name" class="col-sm-2 control-label">Name</label>
+     <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+     </div>
+  </div>
+  <div class="form-group">
+     <label for="email" class="col-sm-2 control-label">Email</label>
+     <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+     </div>
+  </div>
+  <div class="form-group">
+     <label for="message" class="col-sm-2 control-label">Message</label>
+     <div class="col-sm-10">
+        <textarea class="form-control" rows="4" name="message"></textarea>
+     </div>
+  </div>
+  <div class="form-group">
+     <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+     <div class="col-sm-10">
+        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+     </div>
+  </div>
+  <div class="form-group">
+     <div class="col-sm-10 col-sm-offset-2">
+        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+     </div>
+  </div>
+  <div class="form-group">
+     <div class="col-sm-10 col-sm-offset-2">
+        <! Will be used to display an alert to the user>
+     </div>
+  </div>
+</form>
+</div>
 
-          <div class="messages"></div>
 
-          <div class="controls">
 
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="form_name">First Name *</label>
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-              </div>
 
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="form_lastname">Last Name *</label>
-                          <input id="form_lastname" type="text" name="name" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-
-              </div>
-
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="form_email">Email *</label>
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="form_message">Message *</label>
-                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-12">
-                      <input type="submit" class="btn btn-success btn-send" value="Send message">
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <p class="text-muted"><strong>*</strong> These fields are required.</p>
-                  </div>
-              </div>
-          </div>
-
-      </form>
-   </div>
 
 
       <br>
@@ -237,6 +220,7 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/validator.js"></script>
+    <?php include 'index.php';?>
 
   </body>
 
