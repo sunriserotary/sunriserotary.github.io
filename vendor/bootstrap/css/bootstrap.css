@@ -257,7 +257,8 @@ footer.footer {
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .sunrise-1,
-.involved-1, .bgimg-4, .bgimg-5, .bgimg-6, .LT-1, .history-1{
+.involved-1, .bgimg-4, .bgimg-5, .bgimg-6,
+.LT-1, .board-1, .history-1, .contacts-1 {
   position: relative;
   opacity: 0.90;
   background-attachment: fixed;
@@ -309,6 +310,16 @@ footer.footer {
 .LT-1{
   background-image: url("../../../img/LongTermHeader.jpg");
   min-height: 65%;
+}
+
+.contacts-1{
+  background-image: url("../../../img/LongTermHeader.jpg");
+  min-height: 50%;
+}
+
+.board-1{
+  background-image: url("../../../img/LongTermHeader.jpg");
+  min-height: 50%;
 }
 
 .fund-1 {
