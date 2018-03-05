@@ -299,8 +299,8 @@ footer.footer {
 }
 
 .contacts-1{
-  background-image: url("../../../img/AboutUs-Header.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../../../img/contacts-01.jpeg");
+  background-size: cover;
   min-height: 50%;
 }
 
