@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="css/landing-page.css" rel="stylesheet">
 
+    <script src="js/jquery-3.3.1.min.js"></script>
     <link rel='icon' type='image/ico' href='/favicon.ico'/>
     <link rel="stylesheet" href="vendor/bootstrap/css/style.css">
     <script src="js/Chart.js"></script>
@@ -156,7 +157,38 @@
 					</div>
 				</div>
 
-			</section>
+		</section>
+
+
+      <br><br><br>
+
+
+
+      <div class="front-page-text">
+        <h2>Other reports</h2>
+
+        <select id="fundraisers-select">
+          <option value="beach">Annual Day at the Beach</option>
+          <option value="choc">Choc-off</option>
+          <option value="firecracker">The Firecracker 10K/5K/Kid's 1K</option>
+          <option value="bike">Adventure Charity Bike Ride</option>
+          <option value="w2w">Wine 2 Water</option>
+          <option value="golf">Youth Scholarship Golf Tournament</option>
+        </select>
+
+        <br><br>
+
+        <p>Click the button to display that particular graph!</p>
+
+        <br>
+
+         <div height="50%" id="canvas-container">
+           <canvas class="container" id="fundraiser_id" width="400" height="200"></canvas>
+         </div>
+
+
+      </div>
+     </div>
 
       <!-- /.row -->
     <!-- /.container -->
