@@ -138,8 +138,8 @@ header.masthead h1 {
 
 .showcase .showcase-img2 {
   
-  max-width: 560px;
-    max-height: 50px;
+  width: 550px;
+  height: 50px;
   min-height: 30rem;
   background-size: cover;
 }
