@@ -374,7 +374,7 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .test-1, .fund-1, .events-1, .sunrise-1, .involved-1,{
+    .bgimg-1, .bgimg-2, .bgimg-3, .test-1, .fund-1, .events-1, .sunrise-1, .involved-1, .LT-1, .history-1, .board-1, .contacts-1{
         background-attachment: scroll;
     }
 }
