@@ -293,16 +293,14 @@ footer.footer {
 }
 
 .involved-1 {
-  background: url("../../../img/Rotary Bike Ride 2017-19-X5.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../../../img/Rotary Bike Ride 2017-19-X5.jpg");
   background-size: cover;
   min-height: 50%;
 }
 
 .contacts-1{
-  background: url("../../../img/AboutUs-Header.jpg");
+  background-image: url("../../../img/AboutUs-Header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   min-height: 50%;
 }
 
