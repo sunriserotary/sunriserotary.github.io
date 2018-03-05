@@ -109,16 +109,3 @@ function drawFundChart(data){
       }
    });
 }
-
-
-
-
-//}
-
-
-// option value="beach">Annual Day at the Beach</option>
-// <option value="choc">Choc-off</option>
-// <option value="firecracker">The Firecracker 10K/5K/Kid's 1K</option>
-// <option value="bike">Jon & Ken's Most Excellent Adventure Charity Bike Ride</option>
-// <option value="w2w">Wine 2 Water</option>
-// <option value="golf
