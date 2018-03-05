@@ -256,7 +256,8 @@ footer.footer {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .sunrise-1, .involved-1, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .sunrise-1,
+.involved-1, .bgimg-4, .bgimg-5, .bgimg-6, .LT-1 {
   position: relative;
   opacity: 0.90;
   background-attachment: fixed;
@@ -296,6 +297,11 @@ footer.footer {
 }
 
 .sunrise-1 {
+  background-image: url("../../../img/AboutUs-Header.jpg");
+  min-height: 65%;
+}
+
+.LT-1{
   background-image: url("../../../img/AboutUs-Header.jpg");
   min-height: 65%;
 }
