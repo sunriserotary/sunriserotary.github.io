@@ -21,8 +21,8 @@ var bikeridechart = new Chart(ctx, {
       datasets: [{
          label: 'Money Raised',
          data: year_total,
-         borderColor: ['rgba(197, 126, 211, 1)', 'rgba(35, 57, 91, 1)', 'rgba(64, 110, 142, 1)', 'rgba(142, 168, 195, 1)', 'rgba(203, 247, 237, 1)'],
-         backgroundColor: ['rgba(197, 126, 211, .5)', 'rgba(35, 57, 91, .5)', 'rgba(64, 110, 142, .5)', 'rgba(142, 168, 195, .5)', 'rgba(203, 247, 237, .5)'],
+         borderColor: colors_10_border,
+         backgroundColor: colors_10_fill,
          borderWidth: 2
       }]
    },
