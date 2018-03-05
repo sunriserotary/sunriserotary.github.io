@@ -137,6 +137,15 @@ header.masthead h1 {
 }
 
 .showcase .showcase-img {
+  
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.showcase .showcase-img2 {
+  
+  width: 550px;
+  height: 50px;
   min-height: 30rem;
   background-size: cover;
 }
