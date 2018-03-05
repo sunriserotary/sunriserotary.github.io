@@ -137,13 +137,13 @@ header.masthead h1 {
 }
 
 .showcase .showcase-img {
-  
+
   min-height: 30rem;
   background-size: cover;
 }
 
 .showcase .showcase-img2 {
-  
+
   width: 550px;
   height: 50px;
   min-height: 30rem;
@@ -224,7 +224,7 @@ footer.footer {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .involved, .bgimg-4, .bgimg-5, .bgimg-6 {
   position: relative;
   opacity: 0.90;
   background-attachment: fixed;
@@ -255,6 +255,11 @@ footer.footer {
 
 .events-1 {
   background-image: url("../../../img/Rotary Warriors Pajama 2017-8.jpg");
+  min-height: 50%;
+}
+
+.involved-1 {
+  background-image: url("../../../img/Rotary Bike Ride 2017-19-X5.jpg");
   min-height: 50%;
 }
 
