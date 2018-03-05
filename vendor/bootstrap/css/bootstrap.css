@@ -215,7 +215,7 @@ footer.footer {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .test-1, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .fund-1, .events-1, .test-1, .bgimg-4, .bgimg-5, .bgimg-6 {
   position: relative;
   opacity: 0.90;
   background-attachment: fixed;
@@ -241,6 +241,16 @@ footer.footer {
 
 .test-1 {
   background-image: url("../../../img/cow.jpg");
+  min-height: 50%;
+}
+
+.events-1 {
+  background-image: url("../../../img/Rotary Warriors Pajama 2017-8.jpg");
+  min-height: 50%;
+}
+
+.fund-1 {
+  background-image: url("../../../img/IMG_8585.jpg");
   min-height: 50%;
 }
 
