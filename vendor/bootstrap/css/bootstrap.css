@@ -47,6 +47,12 @@
   text-align: center;
 }
 
+.front-page-big-numbers {
+  font-size: 2rem;
+  font-weight: 300;
+  border-color: black;
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -743,11 +749,13 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  width: 100%;
-  padding: 20px;
-  height: 75%;
+  height: 35%;
+  width: 50%;
+}
 
+.img-ind {
+  position: relative;
+  width: 100%;
 }
 
 .img-thumbnail {
