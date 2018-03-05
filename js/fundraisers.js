@@ -1,6 +1,6 @@
 var years = [2013, 2014, 2015, 2016, 2017];
 
-var year_total = [23104, 26194, 24265, 30147, 124840];
+var year_total = [184100, 86600, 83000, 87100, 93200, 71800, 78500, 79000, 78000, 76000];
 
 var orgs = ['2017 Scholarships', 'Camp Harmon', 'CASA', 'Charities & Grants', "LEO's Haven", 'MB Sanctuary Exploration Center', 'Ride-a-wave', 'Santa Cruz Bike Team', 'Santa Cruz Pump Track', 'Second Harvest Food for Children', 'Share Adventures', 'ShelterBox'];
 
@@ -17,7 +17,7 @@ var ctx = document.getElementById("bike-ride-annual");
 var bikeridechart = new Chart(ctx, {
    type: 'bar',
    data: {
-      labels: years,
+      labels: fund_year,
       datasets: [{
          label: 'Money Raised',
          data: year_total,
