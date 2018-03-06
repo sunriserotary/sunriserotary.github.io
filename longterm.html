@@ -21,6 +21,7 @@
 
     <link rel='icon' type='image/ico' href='/favicon.ico'/>
     <link rel="stylesheet" href="vendor/bootstrap/css/style.css">
+    <script src="js/Chart.js"></script>
 
   </head>
 
@@ -45,7 +46,7 @@
        <h2>Our Projects</h2>
        <p class="lead mb-0">A big part of our ways to give back to the community is by supporting local and international causes that we care for. Our projects include  supporting non-profit organizations locally as well as working with other Rotary clubs around the world. Some of our big beneficiaries and projects are included below.
        </p>
-       </div>
+    </div>
 
      <section class="showcase">
      <div class="container-fluid p-0">
@@ -89,6 +90,29 @@
      </section>
      <br><br>
 
+     <div class="front-page-text">
+       <h2>Money Raised</h2>
+       <p class="lead mb-0">
+          Just through one fundraiser, we've raised an extraordinary amount of money to help the above causes and more. Check out our funds distribution to various organizations!
+       </p>
+       <br><br>
+       <canvas class="container" id="org-pie-chart" width="600" height="300"></canvas>
+
+       <br><br>
+
+       <p class="lead mb-0">
+          Want to learn more about how we raise money for causes we believe in? Click the button below to read about various fundraisers we hold throughout the year!
+       </p>
+
+       <br><br>
+
+       <a href="contacts.html">
+          <input class="btn btn-outline-primary" type="button" value="Learn more about fundraisers"/>
+       </a>
+
+
+    </div>
+
 
         <!-- Footer -->
     <footer class="footer bg-secondary">
@@ -127,6 +151,7 @@
       </div>
     </footer>
 
+      <!-- Navbar -->
     <div id="app" class="container bg-dark">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
         <div class="navbar-left">
@@ -196,6 +221,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/longterm.js"></script>
 
   </body>
 
