@@ -116,8 +116,30 @@
   <div class="bgimg-2"></div>
 
   <div class="front-page-text">
-    <h1><span id="fund-num" style="font-size: 50px;"></span></h1>
-    <p class="front-page-big-numbers mb-0">That's how much we've raised in the past 10 years! </p>
+
+     <h2>Join Rotary's 1.2 million neighbors, friends, leaders, and problem-solvers</h2>
+     <p class="lead mb-0">
+     who see a world where people unite and take action to create lasting change – across the globe, in our communities, and in ourselves. Your time, energy, and a passion to improve your world are all you need to get involved with Rotary. Become one of Rotary’s people of action or explore the many opportunities we have for anyone — whatever your age or interest — who wants to improve lives in communities near and far.
+  </p>
+   <br>
+   <a href="involved.html"><input class="btn btn-outline-primary" type="button" value="Get Involved!" /> </a>
+
+  </div>
+
+  <div class="bgimg-3"></div>
+
+  <div class="front-page-text">
+     <h1><span id="fund-num" style="font-size: 50px;"></span></h1>
+    <p class="front-page-big-numbers mb-0">raised by the Santa Cruz Sunrise Rotary Club in the past 10 years, by our</p>
+    <h1><span id="member-num" style="font-size: 50px;"></span></h1>
+    <p class="front-page-big-numbers mb-0">members!</p>
+    <br>
+   <p class="lead mb-0">Ready to learn more about how we raise our money? Click the following button to read about various fundraisers we hold to support the causes we believe in. </p>
+
+    <br>
+    <form>
+     <a href="fundraisers.html"><input class="btn btn-outline-primary" type="button" value="Click here to learn more!" /> </a>
+  </form>
   </div>
 
   <script>
@@ -142,16 +164,27 @@
  );
  </script>
 
-  <div class="bgimg-3"></div>
+ <script>
+ $('#member-num').animateNumber(
+  {
+    number: 91,
+    color: '1FBCCC', // require jquery.color
+    'font-size': '120',
 
-  <div class="front-page-text">
-    <h2>Join Rotary's 1.2 million neighbors, friends, leaders, and problem-solvers</h2>
-    <p class="lead mb-0">
-    who see a world where people unite and take action to create lasting change – across the globe, in our communities, and in ourselves. Your time, energy, and a passion to improve your world are all you need to get involved with Rotary. Become one of Rotary’s people of action or explore the many opportunities we have for anyone — whatever your age or interest — who wants to improve lives in communities near and far.
-</p>
-   <br>
-   <a href="involved.html"><input class="btn btn-outline-primary" type="button" value="Get Involved!" /> </a>
-  </div>
+    easing: 'easeInQuad', // require jquery.easing
+
+    // optional custom step function
+    // using here to keep '%' sign after number
+    numberStep: function(now, tween) {
+      var floored_number = Math.floor(now),
+          target = $(tween.elem);
+
+      target.text(floored_number);
+    }
+  },
+  3000
+);
+</script>
 
   <div class="bgimg-4"></div>
 
