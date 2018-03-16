@@ -19,9 +19,9 @@ This website was built with collaboration through the Santa Cruz Sunrise Rotary 
 		- Bootstrap js/css
 
 ## Authors
-- [Josh Cheung](github.com/joshcheung) 
-- [Bryant Pham](github.com/bpham5)
-- [Rishita Roy](github.com/rishitaro)
-- [Cindy Tiet](github.com/cinger04)
-- [Jeff Yang](github.com/treyzian)
-- [Sheng Xu](github.com/xusheng228)
+- [Josh Cheung](https://github.com/joshcheung)
+- [Bryant Pham](https://github.com/bpham5)
+- [Rishita Roy](https://github.com/rishitaro)
+- [Cindy Tiet](https://github.com/cinger04)
+- [Jeff Yang](https://github.com/treyzian)
+- [Sheng Xu](https://github.com/xusheng228)
